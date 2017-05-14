@@ -1,0 +1,7 @@
+train_ambg.m             均匀相干脉冲串信号的功能函数；
+ 
+xianggan_ambg.m          均匀相干脉冲串信号模糊图、模糊度图的仿真；
+
+xianggan_waveform.m      均匀相干脉冲串信号实部、虚部波形和幅频特性的仿真；
+
+xiangganmaichongchuan.m  均匀相干脉冲串信号的距离和速度模糊图的仿真；

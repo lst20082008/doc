@@ -1,0 +1,9 @@
+danzaipinfenbianli1.m      单载频矩形脉冲信号距离模糊图的仿真；
+
+danzaipinfenbianli2.m      单载频矩形脉冲信号速度模糊图的仿真；
+
+single_pulse_ambg.m        单载频矩形脉冲信号的功能函数；
+
+single_pulse_ambg_wy.m     单载频矩形脉冲信号模糊图、模糊度图的仿真；
+
+single_pulse_spectrum.m    单载频矩形脉冲信号实部、虚部波形和幅频特性的仿真；

@@ -1,0 +1,34 @@
+%单脉冲模糊图及其对应模糊度图
+%单脉冲模糊图脉冲宽度是2s及其对应模糊度图
+close all
+clear all
+taup=2;
+%B=10;
+taumin=-1.1*taup;
+taumax=-taumin;
+x=single_pulse_ambg(taup);
+taux=taumin:.05:taumax;
+fdy=-10/taup:.05:10/taup;
+%%%%%%%%%%模糊图%%%%%%%%%%
+figure(1)
+mesh(taux,fdy,x);%三维函数绘图
+xlabel('延迟/s');
+ylabel('多普勒/Hz');
+zlabel('模糊函数');
+%%%%%%%%模糊度图%%%%%%%%%%%
+figure(2)
+contour(taux,fdy,x);%等高线绘制函数
+xlabel('延迟/s');
+ylabel('多普勒/Hz');
+%%%%%%%%平方后的模糊图%%%%%%%%%%
+y=x.^2;
+figure(3)
+mesh(taux,fdy,y);
+xlabel('延迟/s');
+ylabel('多普勒/Hz');
+zlabel('模糊函数');
+%%%%%%%%对应的模糊度图%%%%%%%%%%
+figure(4)
+contour(taux,fdy,y);
+xlabel('延迟/s')
+ylabel('多普勒/Hz')
